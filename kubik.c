@@ -1,3 +1,3 @@
 #include "fungsi.h"
 
-double f(double x) { return x * x; }
+double f(double x) { return x * x * x; }

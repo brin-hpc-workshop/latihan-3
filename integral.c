@@ -12,9 +12,9 @@ int main(void) {
   double dx = (b - a) / (nx - 1);
 
   // Inisialisasi array
-  double* x = malloc(nx * sizeof(int));
-  double* y = malloc(nx * sizeof(int));
-  for (int i = 0; i <= nx; i++) {
+  double* x = malloc(nx * sizeof(double));
+  double* y = malloc(nx * sizeof(double));
+  for (int i = 0; i < nx; i++) {
     x[i] = a + i * dx;
   }
 
@@ -23,7 +23,7 @@ int main(void) {
   printf("Integral dari %.2f sampai %.2f adalah %.4f\n", a, b, integral);
 
   for (int i = 0; i <= nx; i++) {
-    printf("%.6f %.6f\n", x[i], f[i])
+    printf("%.6f %.6f\n", x[i], y[i]);
   }
 
   return 0;
